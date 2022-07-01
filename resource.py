@@ -1,5 +1,5 @@
 import random
-import math
+import math 
 
 def euclides(a,b):
     if b == 0:
@@ -73,7 +73,6 @@ def gen_primos(n):
 def gen_fi(a,b):
     return (a-1)*(b-1)
 
-
 def gen_e(a):
     e = random.randint(2,a)
     while (euclides(e,a) != 1 ):
@@ -81,5 +80,6 @@ def gen_e(a):
     return e
 
 def gen_d(a,b):
-    l ,m ,n = euclides_ext(a,b)
+    l, m ,n= euclides_ext(a,b)
     return m % b
+
