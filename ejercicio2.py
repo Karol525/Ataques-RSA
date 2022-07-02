@@ -1,15 +1,5 @@
 import resource
 
-def exp_Mod(a, x, n):
-    if x == 0:
-        return 1
-    elif x % 2 == 0:
-        t = exp_Mod(a, x / 2, n)
-        return (t * t) % n
-    else:
-        t = exp_Mod(a, x - 1, n)
-        return (t * (a % n)) % n
-
 if __name__ == '__main__':
     e = 7
     n = 35794234179725868774991807832568455403003778024228226193532908190484670252364677411513516111204504060317568667
