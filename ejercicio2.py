@@ -21,5 +21,5 @@ if __name__ == '__main__':
     x = pow(c, a, n)
     y = pow(c_p, b, n)
     
-    m = ((x * y) % n) % n
+    m = (x * y) % n
     print(m)
